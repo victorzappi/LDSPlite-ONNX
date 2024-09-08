@@ -74,4 +74,6 @@ void cleanup(LDSPcontext *context, void *userData)
   logFile.close();
 
   delete[] inferenceTimes;
+
+  model.cleanup();
 }

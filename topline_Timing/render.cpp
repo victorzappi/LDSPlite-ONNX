@@ -108,7 +108,8 @@ void cleanup(LDSPcontext *context, void *userData)
       logFile << std::to_string(inferenceTimes[i]) << "\n";
   }
   logFile.close();
-//    LDSP_log("cleanup() called %d %s", numLogs, timingLogFilePath.c_str());
 
   delete[] inferenceTimes;
+
+  model.cleanup();
 }

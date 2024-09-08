@@ -85,5 +85,5 @@ void render(LDSPcontext *context, void *userData)
 
 void cleanup(LDSPcontext *context, void *userData)
 {
-
+  model.cleanup();
 }
